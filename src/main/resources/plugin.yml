@@ -1,4 +1,35 @@
 name: KPMain
-version: '${project.version}'
+version: '1.0'
 main: org.newplugin.kpmain.KPMain
 api-version: '1.20'
+commands:
+  removetokens:
+    description: Removes tokens from player
+  tokenbal:
+    description: Shows how many tokens the player has
+  tokens:
+    description: Opens the gui
+  givetokens:
+    description: Gives the player tokens
+    usage: /tokensgive <USER> <AMOUNT>\
+
+permissions:
+  kpmain.givetokens:
+    description: lets the player give tokens
+    default: op
+  kpmain.zircon:
+    default: false
+  kpmain.ruby:
+    default: false
+  kpmain.sapphire:
+    default: false
+  kpmain.peridot:
+    default: false
+  kpmain.jade:
+    default: false
+  kpmain.turquoise:
+    default: false
+  kpmain.helenite:
+    default: false
+  kpmain.emerald:
+    default: false
