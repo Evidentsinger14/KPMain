@@ -24,16 +24,16 @@ public class RanksListener implements Listener {
             String playerName = player.getName();
             ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
             if (event.getCurrentItem() != null) {
-                if (event.getCurrentItem().getType() == Material.IRON_INGOT && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.WHITE.toString() + ChatColor.BOLD.toString() + "Zircon Rank")) {
+                if (event.getCurrentItem().getType() == Material.IRON_INGOT && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.WHITE.toString() + ChatColor.BOLD.toString() + "Page Rank")) {
                     int playerTokens = CoinLister.Check(playerName);
                     int coinsToRemove = 400;
-                    if (player.hasPermission("kpmain.zircon")) {
+                    if (player.hasPermission("kpmain.page")) {
                         player.sendMessage("Already own this rank.");
                     } else if (playerTokens >= coinsToRemove) {
                         coinChanger.remove(playerName, coinsToRemove);
-                        String command = "lp user " + playerName + " parent add zircon";
+                        String command = "lp user " + playerName + " parent add page";
                         Bukkit.getServer().dispatchCommand((CommandSender)console, command);
-                        player.sendMessage("You have just ranked up to Zircon rank!");
+                        player.sendMessage("You have just ranked up to page rank!");
                         TokenGUI.openGUI(player);
                     } else {
                         player.sendMessage("You do not have enough tokens for this!");
@@ -41,7 +41,7 @@ public class RanksListener implements Listener {
                 } else if (event.getCurrentItem().getType() == Material.REDSTONE && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.RED.toString() + ChatColor.BOLD.toString() + "Ruby Rank")) {
                     int playerTokens = CoinLister.Check(playerName);
                     int coinsToRemove = 400;
-                    if (!player.hasPermission("kpmain.zircon")) {
+                    if (!player.hasPermission("kpmain.page")) {
                         player.closeInventory();
                         player.sendMessage("Follow the rank path!");
                     } else if (player.hasPermission("kpmain.ruby")) {
@@ -59,7 +59,7 @@ public class RanksListener implements Listener {
                     int playerTokens = CoinLister.Check(playerName);
                     int coinsToRemove = 400;
                     if (!player.hasPermission("kpmain.ruby") ||
-                            !player.hasPermission("kpmain.zircon")) {
+                            !player.hasPermission("kpmain.page")) {
                         player.closeInventory();
                         player.sendMessage("Follow the rank path!");
                     } else if (player.hasPermission("kpmain.sapphire")) {
@@ -78,7 +78,7 @@ public class RanksListener implements Listener {
                     int coinsToRemove = 400;
                     if (!player.hasPermission("kpmain.sapphire") ||
                             !player.hasPermission("kpmain.ruby") ||
-                            !player.hasPermission("kpmain.zircon")) {
+                            !player.hasPermission("kpmain.page")) {
                         player.closeInventory();
                         player.sendMessage("Follow the rank path!");
                     } else if (player.hasPermission("kpmain.peridot")) {
@@ -98,7 +98,7 @@ public class RanksListener implements Listener {
                     if (!player.hasPermission("kpmain.peridot") ||
                             !player.hasPermission("kpmain.sapphire") ||
                             !player.hasPermission("kpmain.ruby") ||
-                            !player.hasPermission("kpmain.zircon")) {
+                            !player.hasPermission("kpmain.page")) {
                         player.closeInventory();
                         player.sendMessage("Follow the rank path!");
                     } else if (player.hasPermission("kpmain.jade")) {
@@ -119,7 +119,7 @@ public class RanksListener implements Listener {
                             !player.hasPermission("kpmain.peridot") ||
                             !player.hasPermission("kpmain.sapphire") ||
                             !player.hasPermission("kpmain.ruby") ||
-                            !player.hasPermission("kpmain.zircon")) {
+                            !player.hasPermission("kpmain.page")) {
                         player.closeInventory();
                         player.sendMessage("Follow the rank path!");
                     } else if (player.hasPermission("kpmain.turquoise")) {
@@ -141,7 +141,7 @@ public class RanksListener implements Listener {
                             !player.hasPermission("kpmain.peridot") ||
                             !player.hasPermission("kpmain.sapphire") ||
                             !player.hasPermission("kpmain.ruby") ||
-                            !player.hasPermission("kpmain.zircon")) {
+                            !player.hasPermission("kpmain.page")) {
                         player.closeInventory();
                         player.sendMessage("Follow the rank path!");
                     } else if (player.hasPermission("kpmain.helenite")) {
@@ -164,7 +164,7 @@ public class RanksListener implements Listener {
                             !player.hasPermission("kpmain.peridot") ||
                             !player.hasPermission("kpmain.sapphire") ||
                             !player.hasPermission("kpmain.ruby") ||
-                            !player.hasPermission("kpmain.zircon")) {
+                            !player.hasPermission("kpmain.page")) {
                         player.closeInventory();
                         player.sendMessage("Follow the rank path!");
                     } else if (player.hasPermission("kpmain.emerald")) {

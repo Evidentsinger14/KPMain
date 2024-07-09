@@ -17,7 +17,7 @@ permissions:
   kpmain.givetokens:
     description: lets the player give tokens
     default: op
-  kpmain.zircon:
+  kpmain.page:
     default: false
   kpmain.ruby:
     default: false

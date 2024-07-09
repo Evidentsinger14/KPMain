@@ -20,8 +20,8 @@ public class RanksGUI {
 
     public static void OpenGUI(Player player) {
         Inventory inv = Bukkit.createInventory((InventoryHolder)player, 9, ChatColor.BLACK + "KP Ranks Menu");
-        if (!player.hasPermission("kpmain.zircon")) {
-            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lZircon Rank", 400, player, "kpmain.zircon"));
+        if (!player.hasPermission("kpmain.page")) {
+            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lRuby Rank", 400, player, "null"));
             inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lSapphire Rank", 400, player, "null"));
             inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPeridot Rank", 400, player, "null"));
@@ -30,7 +30,7 @@ public class RanksGUI {
             inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lHelenite Rank", 1000, player, "null"));
             inv.setItem(7, createRankItem(Material.EMERALD, "&a&lEmerald Rank", 500, player, "null"));
         } else if (!player.hasPermission("kpmain.ruby")) {
-            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lZircon Rank", 400, player, "kpmain.zircon"));
+            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lRuby Rank", 400, player, "kpmain.ruby"));
             inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lSapphire Rank", 400, player, "null"));
             inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPeridot Rank", 400, player, "null"));
@@ -39,7 +39,7 @@ public class RanksGUI {
             inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lHelenite Rank", 1000, player, "null"));
             inv.setItem(7, createRankItem(Material.EMERALD, "&a&lEmerald Rank", 500, player, "null"));
         } else if (!player.hasPermission("kpmain.sapphire")) {
-            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lZircon Rank", 400, player, "kpmain.zircon"));
+            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lRuby Rank", 400, player, "kpmain.ruby"));
             inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lSapphire Rank", 400, player, "kpmain.sapphire"));
             inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPeridot Rank", 400, player, "null"));
@@ -48,7 +48,7 @@ public class RanksGUI {
             inv.setItem(6, createRankItem(Material.BLUE_DYE, "Helenite Rank", 1000, player, "null"));
             inv.setItem(7, createRankItem(Material.EMERALD, "&a&lEmerald Rank", 500, player, "null"));
         } else if (!player.hasPermission("kpmain.peridot")) {
-            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lZircon Rank", 400, player, "kpmain.zircon"));
+            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lRuby Rank", 400, player, "kpmain.ruby"));
             inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lSapphire Rank", 400, player, "kpmain.sapphire"));
             inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPeridot Rank", 400, player, "kpmain.peridot"));
@@ -57,7 +57,7 @@ public class RanksGUI {
             inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lHelenite Rank", 1000, player, "null"));
             inv.setItem(7, createRankItem(Material.EMERALD, "&a&lEmerald Rank", 500, player, "null"));
         } else if (!player.hasPermission("kpmain.jade")) {
-            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lZircon Rank", 400, player, "kpmain.zircon"));
+            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lRuby Rank", 400, player, "kpmain.ruby"));
             inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lSapphire Rank", 400, player, "kpmain.sapphire"));
             inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPeridot Rank", 400, player, "kpmain.peridot"));
@@ -66,7 +66,7 @@ public class RanksGUI {
             inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lHelenite Rank", 1000, player, "null"));
             inv.setItem(7, createRankItem(Material.EMERALD, "&a&lEmerald Rank", 500, player, "null"));
         } else if (!player.hasPermission("kpmain.turquoise")) {
-            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lZircon Rank", 400, player, "kpmain.zircon"));
+            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lRuby Rank", 400, player, "kpmain.ruby"));
             inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lSapphire Rank", 400, player, "kpmain.sapphire"));
             inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPeridot Rank", 400, player, "kpmain.peridot"));
@@ -75,7 +75,7 @@ public class RanksGUI {
             inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lHelenite Rank", 1000, player, "null"));
             inv.setItem(7, createRankItem(Material.EMERALD, "&a&lEmerald Rank", 500, player, "null"));
         } else if (!player.hasPermission("kpmain.helenite")) {
-            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lZircon Rank", 400, player, "kpmain.zircon"));
+            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lRuby Rank", 400, player, "kpmain.ruby"));
             inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lSapphire Rank", 400, player, "kpmain.sapphire"));
             inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPeridot Rank", 400, player, "kpmain.peridot"));
@@ -84,7 +84,7 @@ public class RanksGUI {
             inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lHelenite Rank", 1000, player, "kpmain.helenite"));
             inv.setItem(7, createRankItem(Material.EMERALD, "&a&lEmerald Rank", 500, player, "null"));
         } else if (!player.hasPermission("kpmain.emerald")) {
-            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lZircon Rank", 400, player, "kpmain.zircon"));
+            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lRuby Rank", 400, player, "kpmain.ruby"));
             inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lSapphire Rank", 400, player, "kpmain.sapphire"));
             inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPeridot Rank", 400, player, "kpmain.peridot"));

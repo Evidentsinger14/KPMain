@@ -36,7 +36,7 @@ public final class KPMain extends JavaPlugin implements Listener {
 
     public static final String GIVE_TOKENS = "kpmain.givetokens";
 
-    public static final String ZIRCON_RANK = "kpmain.zircon";
+    public static final String PAGE_RANK = "kpmain.page";
 
     public static final String RUBY_RANK = "kpmain.ruby";
 
