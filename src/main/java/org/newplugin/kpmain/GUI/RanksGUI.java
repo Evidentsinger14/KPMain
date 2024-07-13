@@ -19,7 +19,7 @@ public class RanksGUI {
     }
 
     public static void OpenGUI(Player player) {
-        Inventory inv = Bukkit.createInventory((InventoryHolder)player, 9, ChatColor.BLACK + "KP Ranks Menu");
+        Inventory inv = Bukkit.createInventory((InventoryHolder)player, 18, ChatColor.BLACK + "KP Ranks Menu");
         if (!player.hasPermission("kpmain.page")) {
             inv.setItem(0, createRankItem(Material.WHITE_DYE, "&f&lPage Rank", 500, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.YELLOW_DYE, "&c&lSquire Rank", 500, player, "null"));
