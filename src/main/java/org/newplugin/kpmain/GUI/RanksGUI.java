@@ -29,8 +29,8 @@ public class RanksGUI {
             inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lCaptain Rank", 2000, player, "null"));
             inv.setItem(6, createRankItem(Material.BLACK_DYE, "&1&lCommander Rank", 2500, player, "null"));
             inv.setItem(7, createRankItem(Material.ORANGE_DYE, "&a&lGeneral Rank", 3000, player, "null"));
-            inv.setItem(9, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "null"));
-            inv.setItem(10, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
+            inv.setItem(8, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "null"));
+            inv.setItem(9, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
         } else if (!player.hasPermission("kpmain.squire")) {
             inv.setItem(0, createRankItem(Material.WHITE_DYE, "&f&lPage Rank", 500, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.YELLOW_DYE,  "&c&lSquire Rank", 500, player, "kpmain.squire"));
@@ -40,8 +40,8 @@ public class RanksGUI {
             inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lCaptain Rank", 1500, player, "null"));
             inv.setItem(6, createRankItem(Material.BLACK_DYE,  "&1&lCommander Rank", 2000, player, "null"));
             inv.setItem(7, createRankItem(Material.ORANGE_DYE, "&a&lGeneral Rank", 2500, player, "null"));
-            inv.setItem(9, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "null"));
-            inv.setItem(10, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
+            inv.setItem(8, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "null"));
+            inv.setItem(9, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
         } else if (!player.hasPermission("kpmain.knight")) {
             inv.setItem(0, createRankItem(Material.WHITE_DYE, "&f&lPage Rank", 500, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.YELLOW_DYE, "&c&lSquire Rank", 500, player, "kpmain.squire"));
@@ -51,8 +51,8 @@ public class RanksGUI {
             inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lCaptain Rank", 1500, player, "null"));
             inv.setItem(6, createRankItem(Material.BLACK_DYE, "Commander Rank", 2000, player, "null"));
             inv.setItem(7, createRankItem(Material.ORANGE_DYE, "&a&lGeneral Rank", 2500, player, "null"));
-            inv.setItem(9, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "null"));
-            inv.setItem(10, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
+            inv.setItem(8, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "null"));
+            inv.setItem(9, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
         } else if (!player.hasPermission("kpmain.paladin")) {
             inv.setItem(0, createRankItem(Material.WHITE_DYE, "&f&lPage Rank", 500, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.YELLOW_DYE, "&c&lSquire Rank", 500, player, "kpmain.squire"));
@@ -62,9 +62,9 @@ public class RanksGUI {
             inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lCaptain Rank", 1500, player, "null"));
             inv.setItem(6, createRankItem(Material.BLACK_DYE, "&1&lCommander Rank", 2000, player, "null"));
             inv.setItem(7, createRankItem(Material.ORANGE_DYE, "&a&lGeneral Rank", 2500, player, "null"));
-            inv.setItem(9, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "null"));
-            inv.setItem(10, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
-        } else if (!player.hasPermission("kpmain.captain")) {
+            inv.setItem(8, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "null"));
+            inv.setItem(9, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
+        } else if (!player.hasPermission("kpmain.lieutenant")) {
             inv.setItem(0, createRankItem(Material.WHITE_DYE, "&f&lPage Rank", 500, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.YELLOW_DYE, "&c&lSquire Rank", 500, player, "kpmain.squire"));
             inv.setItem(2, createRankItem(Material.GREEN_DYE, "&9&lKnight Rank", 1000, player, "kpmain.knight"));
@@ -73,9 +73,9 @@ public class RanksGUI {
             inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lCaptain Rank", 1500, player, "null"));
             inv.setItem(6, createRankItem(Material.BLACK_DYE, "&1&lCommander Rank", 2000, player, "null"));
             inv.setItem(7, createRankItem(Material.ORANGE_DYE, "&a&lGeneral Rank", 2500, player, "null"));
-            inv.setItem(9, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "null"));
-            inv.setItem(10, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
-        } else if (!player.hasPermission("kpmain.lieutenant")) {
+            inv.setItem(8, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "null"));
+            inv.setItem(9, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
+        } else if (!player.hasPermission("kpmain.captain")) {
             inv.setItem(0, createRankItem(Material.WHITE_DYE, "&f&lPage Rank", 500, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.YELLOW_DYE, "&c&lSquire Rank", 500, player, "kpmain.squire"));
             inv.setItem(2, createRankItem(Material.GREEN_DYE, "&9&lKnight Rank", 1000, player, "kpmain.knight"));
@@ -84,8 +84,8 @@ public class RanksGUI {
             inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lCaptain Rank", 1500, player, "kpmain.lieutenant"));
             inv.setItem(6, createRankItem(Material.BLACK_DYE, "&1&lCommander Rank", 2000, player, "null"));
             inv.setItem(7, createRankItem(Material.ORANGE_DYE,"&a&lGeneral Rank", 2500, player, "null"));
-            inv.setItem(9, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "null"));
-            inv.setItem(10, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
+            inv.setItem(8, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "null"));
+            inv.setItem(9, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
         } else if (!player.hasPermission("kpmain.commander")) {
             inv.setItem(0, createRankItem(Material.WHITE_DYE, "&f&lPage Rank", 500, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.YELLOW_DYE, "&c&lSquire Rank", 500, player, "kpmain.squire"));
@@ -95,8 +95,8 @@ public class RanksGUI {
             inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lCaptain Rank", 1500, player, "kpmain.lieutenant"));
             inv.setItem(6, createRankItem(Material.BLACK_DYE, "&1&lCommander Rank", 2000, player, "kpmain.commander"));
             inv.setItem(7, createRankItem(Material.ORANGE_DYE,"&a&lGeneral Rank", 2500, player, "null"));
-            inv.setItem(9, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "null"));
-            inv.setItem(10, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
+            inv.setItem(8, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "null"));
+            inv.setItem(9, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
         } else if (!player.hasPermission("kpmain.general")) {
             inv.setItem(0, createRankItem(Material.WHITE_DYE, "&f&lPage Rank", 500, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.YELLOW_DYE, "&c&lSquire Rank", 500, player, "kpmain.squire"));
@@ -106,9 +106,9 @@ public class RanksGUI {
             inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lCaptain Rank", 1500, player, "kpmain.lieutenant"));
             inv.setItem(6, createRankItem(Material.BLACK_DYE, "&1&lCommander Rank", 2000, player, "kpmain.commander"));
             inv.setItem(7, createRankItem(Material.ORANGE_DYE,"&a&lGeneral Rank", 2500, player, "kpmain.general"));
-            inv.setItem(9, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "null"));
-            inv.setItem(10, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
-        } else if (!player.hasPermission("kpmain.general")) {
+            inv.setItem(8, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "null"));
+            inv.setItem(9, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
+        } else if (!player.hasPermission("kpmain.marshal")) {
             inv.setItem(0, createRankItem(Material.WHITE_DYE, "&f&lPage Rank", 500, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.YELLOW_DYE, "&c&lSquire Rank", 500, player, "kpmain.squire"));
             inv.setItem(2, createRankItem(Material.GREEN_DYE, "&9&lKnight Rank", 1000, player, "kpmain.knight"));
@@ -117,9 +117,9 @@ public class RanksGUI {
             inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lCaptain Rank", 1500, player, "kpmain.lieutenant"));
             inv.setItem(6, createRankItem(Material.BLACK_DYE, "&1&lCommander Rank", 2000, player, "kpmain.commander"));
             inv.setItem(7, createRankItem(Material.ORANGE_DYE,"&a&lGeneral Rank", 2500, player, "kpmain.general"));
-            inv.setItem(9, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "kpmain.marshal"));
-            inv.setItem(10, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
-        } else if (!player.hasPermission("kpmain.general")) {
+            inv.setItem(8, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "kpmain.marshal"));
+            inv.setItem(9, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "null"));
+        } else if (!player.hasPermission("kpmain.champion")) {
             inv.setItem(0, createRankItem(Material.WHITE_DYE, "&f&lPage Rank", 500, player, "kpmain.page"));
             inv.setItem(1, createRankItem(Material.YELLOW_DYE, "&c&lSquire Rank", 500, player, "kpmain.squire"));
             inv.setItem(2, createRankItem(Material.GREEN_DYE, "&9&lKnight Rank", 1000, player, "kpmain.knight"));
@@ -153,7 +153,7 @@ public class RanksGUI {
     public static ItemStack createGoBack() {
         ItemStack goBack = new ItemStack(Material.BARRIER);
         ItemMeta meta = goBack.getItemMeta();
-        meta.setDisplayName(ChatColor.BOLD +"Go Back");
+        meta.setDisplayName("Go Back");
         goBack.setItemMeta(meta);
         return goBack;
     }

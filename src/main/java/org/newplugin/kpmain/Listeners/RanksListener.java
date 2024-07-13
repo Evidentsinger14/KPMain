@@ -92,7 +92,7 @@ public class RanksListener implements Listener {
                     } else {
                         player.sendMessage("You do not have enough tokens for this!");
                     }
-                } else if (event.getCurrentItem().getType() == Material.CYAN_DYE && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.DARK_GREEN.toString() + ChatColor.BOLD.toString() + "Captain Rank")) {
+                } else if (event.getCurrentItem().getType() == Material.CYAN_DYE && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.DARK_GREEN.toString() + ChatColor.BOLD.toString() + "Lieutenant Rank")) {
                     int playerTokens = CoinLister.Check(playerName);
                     int coinsToRemove = 400;
                     if (!player.hasPermission("kpmain.paladin") ||
@@ -112,7 +112,7 @@ public class RanksListener implements Listener {
                     } else {
                         player.sendMessage("You do not have enough tokens for this!");
                     }
-                } else if (event.getCurrentItem().getType() == Material.LIGHT_BLUE_DYE && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.AQUA.toString() + ChatColor.BOLD.toString() + "Lieutenant Rank")) {
+                } else if (event.getCurrentItem().getType() == Material.LIGHT_BLUE_DYE && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.AQUA.toString() + ChatColor.BOLD.toString() + "Captain Rank")) {
                     int playerTokens = CoinLister.Check(playerName);
                     int coinsToRemove = 500;
                     if (!player.hasPermission("kpmain.lieutenant") ||
@@ -230,7 +230,7 @@ public class RanksListener implements Listener {
                     } else {
                         player.sendMessage("You do not have enough tokens for this!");
                     }
-                    if (event.getCurrentItem().getType() == Material.BARRIER && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.BOLD +"Go Back"))
+                    if (event.getCurrentItem().getType() == Material.BARRIER && event.getCurrentItem().getItemMeta().getDisplayName().equals("Go Back"))
                         TokenGUI.openGUI(player);
                 }
             }
