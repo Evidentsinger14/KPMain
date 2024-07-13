@@ -230,7 +230,7 @@ public class RanksListener implements Listener {
                     } else {
                         player.sendMessage("You do not have enough tokens for this!");
                     }
-                    if (event.getCurrentItem().getType() == Material.BARRIER && event.getCurrentItem().getItemMeta().getDisplayName().equals("Go Back"))
+                    if (event.getCurrentItem().getType() == Material.BARRIER && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.BOLD +"Go Back"))
                         TokenGUI.openGUI(player);
                 }
             }

@@ -128,10 +128,10 @@ public class RanksGUI {
             inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lCaptain Rank", 1500, player, "kpmain.lieutenant"));
             inv.setItem(6, createRankItem(Material.BLACK_DYE, "&1&lCommander Rank", 2000, player, "kpmain.commander"));
             inv.setItem(7, createRankItem(Material.ORANGE_DYE,"&a&lGeneral Rank", 2500, player, "kpmain.general"));
-            inv.setItem(9, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "kpmain.marshal"));
-            inv.setItem(10, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "kpmain.champion"));
+            inv.setItem(8, createRankItem(Material.RED_DYE, "&4&lMarshal Rank", 3500, player, "kpmain.marshal"));
+            inv.setItem(9, createRankItem(Material.PURPLE_DYE, "&5&lChampion Rank", 4000, player, "kpmain.champion"));
         }
-        inv.setItem(8, createGoBack());
+        inv.setItem(17, createGoBack());
         player.openInventory(inv);
     }
 
@@ -153,7 +153,7 @@ public class RanksGUI {
     public static ItemStack createGoBack() {
         ItemStack goBack = new ItemStack(Material.BARRIER);
         ItemMeta meta = goBack.getItemMeta();
-        meta.setDisplayName("Go Back");
+        meta.setDisplayName(ChatColor.BOLD +"Go Back");
         goBack.setItemMeta(meta);
         return goBack;
     }
