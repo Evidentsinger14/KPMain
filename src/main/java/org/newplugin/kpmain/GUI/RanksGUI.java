@@ -22,76 +22,76 @@ public class RanksGUI {
         Inventory inv = Bukkit.createInventory((InventoryHolder)player, 9, ChatColor.BLACK + "KP Ranks Menu");
         if (!player.hasPermission("kpmain.page")) {
             inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
-            inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lRuby Rank", 400, player, "null"));
-            inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lSapphire Rank", 400, player, "null"));
+            inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lSquire Rank", 400, player, "null"));
+            inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lKnight Rank", 400, player, "null"));
+            inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPaladin Rank", 400, player, "null"));
+            inv.setItem(4, createRankItem(Material.GREEN_DYE, "&2&lCaptain Rank", 400, player, "null"));
+            inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lLieutenant Rank", 500, player, "null"));
+            inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lCommander Rank", 1000, player, "null"));
+            inv.setItem(7, createRankItem(Material.EMERALD, "&a&lGeneral Rank", 500, player, "null"));
+        } else if (!player.hasPermission("kpmain.squire")) {
+            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
+            inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lSquire Rank", 400, player, "kpmain.squire"));
+            inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lKnight Rank", 400, player, "null"));
             inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPeridot Rank", 400, player, "null"));
-            inv.setItem(4, createRankItem(Material.GREEN_DYE, "&2&lJade Rank", 400, player, "null"));
-            inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lTurquoise Rank", 500, player, "null"));
-            inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lHelenite Rank", 1000, player, "null"));
-            inv.setItem(7, createRankItem(Material.EMERALD, "&a&lEmerald Rank", 500, player, "null"));
-        } else if (!player.hasPermission("kpmain.ruby")) {
+            inv.setItem(4, createRankItem(Material.GREEN_DYE, "&2&lCaptain Rank", 400, player, "null"));
+            inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lLieutenant Rank", 500, player, "null"));
+            inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lCommander Rank", 1000, player, "null"));
+            inv.setItem(7, createRankItem(Material.EMERALD, "&a&lGeneral Rank", 500, player, "null"));
+        } else if (!player.hasPermission("kpmain.knight")) {
             inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
-            inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lRuby Rank", 400, player, "kpmain.ruby"));
-            inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lSapphire Rank", 400, player, "null"));
-            inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPeridot Rank", 400, player, "null"));
-            inv.setItem(4, createRankItem(Material.GREEN_DYE, "&2&lJade Rank", 400, player, "null"));
-            inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lTurquoise Rank", 500, player, "null"));
-            inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lHelenite Rank", 1000, player, "null"));
-            inv.setItem(7, createRankItem(Material.EMERALD, "&a&lEmerald Rank", 500, player, "null"));
-        } else if (!player.hasPermission("kpmain.sapphire")) {
+            inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lSquire Rank", 400, player, "kpmain.squire"));
+            inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lKnight Rank", 400, player, "kpmain.knight"));
+            inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPaladin Rank", 400, player, "null"));
+            inv.setItem(4, createRankItem(Material.GREEN_DYE, "&2&lCaptain Rank", 400, player, "null"));
+            inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lLieutenant Rank", 500, player, "null"));
+            inv.setItem(6, createRankItem(Material.BLUE_DYE, "Commander Rank", 1000, player, "null"));
+            inv.setItem(7, createRankItem(Material.EMERALD, "&a&lGeneral Rank", 500, player, "null"));
+        } else if (!player.hasPermission("kpmain.paladin")) {
             inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
-            inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lRuby Rank", 400, player, "kpmain.ruby"));
-            inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lSapphire Rank", 400, player, "kpmain.sapphire"));
-            inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPeridot Rank", 400, player, "null"));
-            inv.setItem(4, createRankItem(Material.GREEN_DYE, "&2&lJade Rank", 400, player, "null"));
-            inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lTurquoise Rank", 500, player, "null"));
-            inv.setItem(6, createRankItem(Material.BLUE_DYE, "Helenite Rank", 1000, player, "null"));
-            inv.setItem(7, createRankItem(Material.EMERALD, "&a&lEmerald Rank", 500, player, "null"));
-        } else if (!player.hasPermission("kpmain.peridot")) {
+            inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lSquire Rank", 400, player, "kpmain.squire"));
+            inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lKnight Rank", 400, player, "kpmain.knight"));
+            inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPaladin Rank", 400, player, "kpmain.paladin"));
+            inv.setItem(4, createRankItem(Material.GREEN_DYE, "&2&lCaptain Rank", 400, player, "null"));
+            inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lLieutenant Rank", 500, player, "null"));
+            inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lCommander Rank", 1000, player, "null"));
+            inv.setItem(7, createRankItem(Material.EMERALD, "&a&lGeneral Rank", 500, player, "null"));
+        } else if (!player.hasPermission("kpmain.captain")) {
             inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
-            inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lRuby Rank", 400, player, "kpmain.ruby"));
-            inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lSapphire Rank", 400, player, "kpmain.sapphire"));
-            inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPeridot Rank", 400, player, "kpmain.peridot"));
-            inv.setItem(4, createRankItem(Material.GREEN_DYE, "&2&lJade Rank", 400, player, "null"));
-            inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lTurquoise Rank", 500, player, "null"));
-            inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lHelenite Rank", 1000, player, "null"));
-            inv.setItem(7, createRankItem(Material.EMERALD, "&a&lEmerald Rank", 500, player, "null"));
-        } else if (!player.hasPermission("kpmain.jade")) {
+            inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lSquire Rank", 400, player, "kpmain.squire"));
+            inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lKnight Rank", 400, player, "kpmain.knight"));
+            inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPaladin Rank", 400, player, "kpmain.paladin"));
+            inv.setItem(4, createRankItem(Material.GREEN_DYE, "&2&lCaptain Rank", 400, player, "kpmain.captain"));
+            inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lLieutenant Rank", 500, player, "null"));
+            inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lCommander Rank", 1000, player, "null"));
+            inv.setItem(7, createRankItem(Material.EMERALD, "&a&lGeneral Rank", 500, player, "null"));
+        } else if (!player.hasPermission("kpmain.lieutenant")) {
             inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
-            inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lRuby Rank", 400, player, "kpmain.ruby"));
-            inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lSapphire Rank", 400, player, "kpmain.sapphire"));
-            inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPeridot Rank", 400, player, "kpmain.peridot"));
-            inv.setItem(4, createRankItem(Material.GREEN_DYE, "&2&lJade Rank", 400, player, "kpmain.jade"));
-            inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lTurquoise Rank", 500, player, "null"));
-            inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lHelenite Rank", 1000, player, "null"));
-            inv.setItem(7, createRankItem(Material.EMERALD, "&a&lEmerald Rank", 500, player, "null"));
-        } else if (!player.hasPermission("kpmain.turquoise")) {
+            inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lSquire Rank", 400, player, "kpmain.squire"));
+            inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lKnight Rank", 400, player, "kpmain.knight"));
+            inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPaladin Rank", 400, player, "kpmain.paladin"));
+            inv.setItem(4, createRankItem(Material.GREEN_DYE, "&2&lCaptain Rank", 400, player, "kpmain.captain"));
+            inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lLieutenant Rank", 500, player, "kpmain.lieutenant"));
+            inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lCommander Rank", 1000, player, "null"));
+            inv.setItem(7, createRankItem(Material.EMERALD, "&a&lGeneral Rank", 500, player, "null"));
+        } else if (!player.hasPermission("kpmain.commander")) {
             inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
-            inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lRuby Rank", 400, player, "kpmain.ruby"));
-            inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lSapphire Rank", 400, player, "kpmain.sapphire"));
-            inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPeridot Rank", 400, player, "kpmain.peridot"));
-            inv.setItem(4, createRankItem(Material.GREEN_DYE, "&2&lJade Rank", 400, player, "kpmain.jade"));
-            inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lTurquoise Rank", 500, player, "kpmain.turquoise"));
-            inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lHelenite Rank", 1000, player, "null"));
-            inv.setItem(7, createRankItem(Material.EMERALD, "&a&lEmerald Rank", 500, player, "null"));
-        } else if (!player.hasPermission("kpmain.helenite")) {
+            inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lSquire Rank", 400, player, "kpmain.squire"));
+            inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lKnight Rank", 400, player, "kpmain.knight"));
+            inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPaladin Rank", 400, player, "kpmain.paladin"));
+            inv.setItem(4, createRankItem(Material.GREEN_DYE, "&2&lCaptain Rank", 400, player, "kpmain.captain"));
+            inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lLieutenant Rank", 500, player, "kpmain.lieutenant"));
+            inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lCommander Rank", 1000, player, "kpmain.commander"));
+            inv.setItem(7, createRankItem(Material.EMERALD, "&a&lGeneral Rank", 500, player, "null"));
+        } else if (!player.hasPermission("kpmain.general")) {
             inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
-            inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lRuby Rank", 400, player, "kpmain.ruby"));
-            inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lSapphire Rank", 400, player, "kpmain.sapphire"));
-            inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPeridot Rank", 400, player, "kpmain.peridot"));
-            inv.setItem(4, createRankItem(Material.GREEN_DYE, "&2&lJade Rank", 400, player, "kpmain.jade"));
-            inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lTurquoise Rank", 500, player, "kpmain.turquoise"));
-            inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lHelenite Rank", 1000, player, "kpmain.helenite"));
-            inv.setItem(7, createRankItem(Material.EMERALD, "&a&lEmerald Rank", 500, player, "null"));
-        } else if (!player.hasPermission("kpmain.emerald")) {
-            inv.setItem(0, createRankItem(Material.IRON_INGOT, "&f&lPage Rank", 400, player, "kpmain.page"));
-            inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lRuby Rank", 400, player, "kpmain.ruby"));
-            inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lSapphire Rank", 400, player, "kpmain.sapphire"));
-            inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPeridot Rank", 400, player, "kpmain.peridot"));
-            inv.setItem(4, createRankItem(Material.GREEN_DYE, "&2&lJade Rank", 400, player, "kpmain.jade"));
-            inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lTurquoise Rank", 500, player, "kpmain.turquoise"));
-            inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lHelenite Rank", 1000, player, "kpmain.helenite"));
-            inv.setItem(7, createRankItem(Material.EMERALD, "&a&lEmerald Rank", 500, player, "kpmain.emerald"));
+            inv.setItem(1, createRankItem(Material.REDSTONE, "&c&lSquire Rank", 400, player, "kpmain.squire"));
+            inv.setItem(2, createRankItem(Material.LAPIS_LAZULI, "&9&lKnight Rank", 400, player, "kpmain.knight"));
+            inv.setItem(3, createRankItem(Material.LIME_DYE, "&a&lPaladin Rank", 400, player, "kpmain.paladin"));
+            inv.setItem(4, createRankItem(Material.GREEN_DYE, "&2&lCaptain Rank", 400, player, "kpmain.captain"));
+            inv.setItem(5, createRankItem(Material.LIGHT_BLUE_DYE, "&b&lLieutenant Rank", 500, player, "kpmain.lieutenant"));
+            inv.setItem(6, createRankItem(Material.BLUE_DYE, "&1&lCommander Rank", 1000, player, "kpmain.commander"));
+            inv.setItem(7, createRankItem(Material.EMERALD, "&a&lGeneral Rank", 500, player, "kpmain.general"));
         }
         inv.setItem(8, createGoBack());
         player.openInventory(inv);

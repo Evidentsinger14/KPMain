@@ -19,17 +19,17 @@ permissions:
     default: op
   kpmain.page:
     default: false
-  kpmain.ruby:
+  kpmain.squire:
     default: false
-  kpmain.sapphire:
+  kpmain.knight:
     default: false
-  kpmain.peridot:
+  kpmain.paladin:
     default: false
-  kpmain.jade:
+  kpmain.captain:
     default: false
-  kpmain.turquoise:
+  kpmain.lieutenant:
     default: false
-  kpmain.helenite:
+  kpmain.commander:
     default: false
-  kpmain.emerald:
+  kpmain.general:
     default: false

@@ -38,142 +38,142 @@ public class RanksListener implements Listener {
                     } else {
                         player.sendMessage("You do not have enough tokens for this!");
                     }
-                } else if (event.getCurrentItem().getType() == Material.REDSTONE && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.RED.toString() + ChatColor.BOLD.toString() + "Ruby Rank")) {
+                } else if (event.getCurrentItem().getType() == Material.REDSTONE && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.RED.toString() + ChatColor.BOLD.toString() + "Squire Rank")) {
                     int playerTokens = CoinLister.Check(playerName);
                     int coinsToRemove = 400;
                     if (!player.hasPermission("kpmain.page")) {
                         player.closeInventory();
                         player.sendMessage("Follow the rank path!");
-                    } else if (player.hasPermission("kpmain.ruby")) {
+                    } else if (player.hasPermission("kpmain.squire")) {
                         player.sendMessage("Already own this rank.");
                     } else if (playerTokens >= coinsToRemove) {
                         coinChanger.remove(playerName, coinsToRemove);
-                        String command = "lp user " + playerName + " parent add ruby";
+                        String command = "lp user " + playerName + " parent add Squire";
                         Bukkit.getServer().dispatchCommand((CommandSender)console, command);
-                        player.sendMessage("You have just ranked up to Ruby rank!");
+                        player.sendMessage("You have just ranked up to Squire rank!");
                         TokenGUI.openGUI(player);
                     } else {
                         player.sendMessage("You do not have enough tokens for this!");
                     }
-                } else if (event.getCurrentItem().getType() == Material.LAPIS_LAZULI && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.BLUE.toString() + ChatColor.BOLD.toString() + "Sapphire Rank")) {
+                } else if (event.getCurrentItem().getType() == Material.LAPIS_LAZULI && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.BLUE.toString() + ChatColor.BOLD.toString() + "Knight Rank")) {
                     int playerTokens = CoinLister.Check(playerName);
                     int coinsToRemove = 400;
-                    if (!player.hasPermission("kpmain.ruby") ||
+                    if (!player.hasPermission("kpmain.squire") ||
                             !player.hasPermission("kpmain.page")) {
                         player.closeInventory();
                         player.sendMessage("Follow the rank path!");
-                    } else if (player.hasPermission("kpmain.sapphire")) {
+                    } else if (player.hasPermission("kpmain.knight")) {
                         player.sendMessage("Already own this rank.");
                     } else if (playerTokens >= coinsToRemove) {
                         coinChanger.remove(playerName, coinsToRemove);
-                        String command = "lp user " + playerName + " parent add sapphire";
+                        String command = "lp user " + playerName + " parent add knight";
                         Bukkit.getServer().dispatchCommand((CommandSender)console, command);
-                        player.sendMessage("You have just ranked up to Sapphire rank!");
+                        player.sendMessage("You have just ranked up to Knight rank!");
                         TokenGUI.openGUI(player);
                     } else {
                         player.sendMessage("You do not have enough tokens for this!");
                     }
-                } else if (event.getCurrentItem().getType() == Material.LIME_DYE && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.GREEN.toString() + ChatColor.BOLD.toString() + "Peridot Rank")) {
+                } else if (event.getCurrentItem().getType() == Material.LIME_DYE && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.GREEN.toString() + ChatColor.BOLD.toString() + "Paladin Rank")) {
                     int playerTokens = CoinLister.Check(playerName);
                     int coinsToRemove = 400;
-                    if (!player.hasPermission("kpmain.sapphire") ||
-                            !player.hasPermission("kpmain.ruby") ||
+                    if (!player.hasPermission("kpmain.knight") ||
+                            !player.hasPermission("kpmain.squire") ||
                             !player.hasPermission("kpmain.page")) {
                         player.closeInventory();
                         player.sendMessage("Follow the rank path!");
-                    } else if (player.hasPermission("kpmain.peridot")) {
+                    } else if (player.hasPermission("kpmain.paladin")) {
                         player.sendMessage("Already own this rank.");
                     } else if (playerTokens >= coinsToRemove) {
                         coinChanger.remove(playerName, coinsToRemove);
-                        String command = "lp user " + playerName + " parent add peridot";
+                        String command = "lp user " + playerName + " parent add paladin";
                         Bukkit.getServer().dispatchCommand((CommandSender)console, command);
-                        player.sendMessage("You have just ranked up to Peridot rank!");
+                        player.sendMessage("You have just ranked up to paladin rank!");
                         TokenGUI.openGUI(player);
                     } else {
                         player.sendMessage("You do not have enough tokens for this!");
                     }
-                } else if (event.getCurrentItem().getType() == Material.GREEN_DYE && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.DARK_GREEN.toString() + ChatColor.BOLD.toString() + "Jade Rank")) {
+                } else if (event.getCurrentItem().getType() == Material.GREEN_DYE && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.DARK_GREEN.toString() + ChatColor.BOLD.toString() + "Captain Rank")) {
                     int playerTokens = CoinLister.Check(playerName);
                     int coinsToRemove = 400;
-                    if (!player.hasPermission("kpmain.peridot") ||
-                            !player.hasPermission("kpmain.sapphire") ||
-                            !player.hasPermission("kpmain.ruby") ||
+                    if (!player.hasPermission("kpmain.paladin") ||
+                            !player.hasPermission("kpmain.knight") ||
+                            !player.hasPermission("kpmain.squire") ||
                             !player.hasPermission("kpmain.page")) {
                         player.closeInventory();
                         player.sendMessage("Follow the rank path!");
-                    } else if (player.hasPermission("kpmain.jade")) {
+                    } else if (player.hasPermission("kpmain.captain")) {
                         player.sendMessage("Already own this rank.");
                     } else if (playerTokens >= coinsToRemove) {
                         coinChanger.remove(playerName, coinsToRemove);
-                        String command = "lp user " + playerName + " parent add jade";
+                        String command = "lp user " + playerName + " parent add captain";
                         Bukkit.getServer().dispatchCommand((CommandSender)console, command);
-                        player.sendMessage("You have just ranked up to Jade rank!");
+                        player.sendMessage("You have just ranked up to Captain rank!");
                         TokenGUI.openGUI(player);
                     } else {
                         player.sendMessage("You do not have enough tokens for this!");
                     }
-                } else if (event.getCurrentItem().getType() == Material.LIGHT_BLUE_DYE && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.AQUA.toString() + ChatColor.BOLD.toString() + "Turquoise Rank")) {
+                } else if (event.getCurrentItem().getType() == Material.LIGHT_BLUE_DYE && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.AQUA.toString() + ChatColor.BOLD.toString() + "Lieutenant Rank")) {
                     int playerTokens = CoinLister.Check(playerName);
                     int coinsToRemove = 500;
-                    if (!player.hasPermission("kpmain.jade") ||
-                            !player.hasPermission("kpmain.peridot") ||
-                            !player.hasPermission("kpmain.sapphire") ||
-                            !player.hasPermission("kpmain.ruby") ||
+                    if (!player.hasPermission("kpmain.captain") ||
+                            !player.hasPermission("kpmain.paladin") ||
+                            !player.hasPermission("kpmain.knight") ||
+                            !player.hasPermission("kpmain.squire") ||
                             !player.hasPermission("kpmain.page")) {
                         player.closeInventory();
                         player.sendMessage("Follow the rank path!");
-                    } else if (player.hasPermission("kpmain.turquoise")) {
+                    } else if (player.hasPermission("kpmain.lieutenant")) {
                         player.sendMessage("Already own this rank.");
                     } else if (playerTokens >= coinsToRemove) {
                         coinChanger.remove(playerName, coinsToRemove);
-                        String command = "lp user " + playerName + " parent add turquoise";
+                        String command = "lp user " + playerName + " parent add lieutenant";
                         Bukkit.getServer().dispatchCommand((CommandSender)console, command);
-                        player.sendMessage("You have just ranked up to Turquoise rank!");
+                        player.sendMessage("You have just ranked up to Lieutenant rank!");
                         TokenGUI.openGUI(player);
                     } else {
                         player.sendMessage("You do not have enough tokens for this!");
                     }
-                } else if (event.getCurrentItem().getType() == Material.BLUE_DYE && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.DARK_BLUE.toString() + ChatColor.BOLD.toString() + "Helenite Rank")) {
+                } else if (event.getCurrentItem().getType() == Material.BLUE_DYE && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.DARK_BLUE.toString() + ChatColor.BOLD.toString() + "Commander Rank")) {
                     int playerTokens = CoinLister.Check(playerName);
                     int coinsToRemove = 1000;
-                    if (!player.hasPermission("kpmain.turquoise") ||
-                            !player.hasPermission("kpmain.jade") ||
-                            !player.hasPermission("kpmain.peridot") ||
-                            !player.hasPermission("kpmain.sapphire") ||
-                            !player.hasPermission("kpmain.ruby") ||
+                    if (!player.hasPermission("kpmain.lieutenant") ||
+                            !player.hasPermission("kpmain.captain") ||
+                            !player.hasPermission("kpmain.paladin") ||
+                            !player.hasPermission("kpmain.knight") ||
+                            !player.hasPermission("kpmain.squire") ||
                             !player.hasPermission("kpmain.page")) {
                         player.closeInventory();
                         player.sendMessage("Follow the rank path!");
-                    } else if (player.hasPermission("kpmain.helenite")) {
+                    } else if (player.hasPermission("kpmain.commander")) {
                         player.sendMessage("Already own this rank.");
                     } else if (playerTokens >= coinsToRemove) {
                         coinChanger.remove(playerName, coinsToRemove);
-                        String command = "lp user " + playerName + " parent add helenite";
+                        String command = "lp user " + playerName + " parent add commander";
                         Bukkit.getServer().dispatchCommand((CommandSender)console, command);
-                        player.sendMessage("You have just ranked up to Helenite rank!");
+                        player.sendMessage("You have just ranked up to Commander rank!");
                         TokenGUI.openGUI(player);
                     } else {
                         player.sendMessage("You do not have enough tokens for this!");
                     }
-                } else if (event.getCurrentItem().getType() == Material.EMERALD && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.GREEN.toString() + ChatColor.BOLD.toString() + "Emerald Rank")) {
+                } else if (event.getCurrentItem().getType() == Material.EMERALD && event.getCurrentItem().getItemMeta().getDisplayName().equals(ChatColor.GREEN.toString() + ChatColor.BOLD.toString() + "General Rank")) {
                     int playerTokens = CoinLister.Check(playerName);
                     int coinsToRemove = 500;
-                    if (!player.hasPermission("kpmain.helenite") ||
-                            !player.hasPermission("kpmain.turquoise") ||
-                            !player.hasPermission("kpmain.jade") ||
-                            !player.hasPermission("kpmain.peridot") ||
-                            !player.hasPermission("kpmain.sapphire") ||
-                            !player.hasPermission("kpmain.ruby") ||
+                    if (!player.hasPermission("kpmain.commander") ||
+                            !player.hasPermission("kpmain.lieutenant") ||
+                            !player.hasPermission("kpmain.captain") ||
+                            !player.hasPermission("kpmain.paladin") ||
+                            !player.hasPermission("kpmain.knight") ||
+                            !player.hasPermission("kpmain.squire") ||
                             !player.hasPermission("kpmain.page")) {
                         player.closeInventory();
                         player.sendMessage("Follow the rank path!");
-                    } else if (player.hasPermission("kpmain.emerald")) {
+                    } else if (player.hasPermission("kpmain.general")) {
                         player.sendMessage("Already own this rank.");
                     } else if (playerTokens >= coinsToRemove) {
                         coinChanger.remove(playerName, coinsToRemove);
-                        String command = "lp user " + playerName + " parent add emerald";
+                        String command = "lp user " + playerName + " parent add general";
                         Bukkit.getServer().dispatchCommand((CommandSender)console, command);
-                        player.sendMessage("You have just ranked up to Emerald rank!");
+                        player.sendMessage("You have just ranked up to General rank!");
                         player.sendMessage("Congrats! You have all the ranks!");
                         TokenGUI.openGUI(player);
                     } else {

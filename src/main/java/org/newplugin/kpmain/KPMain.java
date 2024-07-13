@@ -38,19 +38,19 @@ public final class KPMain extends JavaPlugin implements Listener {
 
     public static final String PAGE_RANK = "kpmain.page";
 
-    public static final String RUBY_RANK = "kpmain.ruby";
+    public static final String SQUIRE_RANK = "kpmain.squire";
 
-    public static final String SAPPHIRE_RANK = "kpmain.sapphire";
+    public static final String KNIGHT_RANK = "kpmain.knight";
 
-    public static final String PERIDOT_RANK = "kpmain.peridot";
+    public static final String PALADIN_RANK = "kpmain.paladin";
 
-    public static final String TURQUOISE_RANK = "kpmain.turquoise";
+    public static final String LIEUTENANT_RANK = "kpmain.lieutenant";
 
-    public static final String JADE_RANK = "kpmain.jade";
+    public static final String CAPTAIN_RANK = "kpmain.captain";
 
-    public static final String HELENITE_RANK = "kpmain.helenite";
+    public static final String COMMANDER_RANK = "kpmain.commander";
 
-    public static final String EMERALD_RANK = "kpmain.emerald";
+    public static final String GENERAL_RANK = "kpmain.general";
 
     private long breakDelay = 5L;
 
