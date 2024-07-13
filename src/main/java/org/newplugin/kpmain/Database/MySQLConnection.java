@@ -8,10 +8,10 @@ public class MySQLConnection {
     private Connection connection;
 
     public MySQLConnection() {
-        String host = "wigeon.bloom.host";
-        String database = "s49069_KP_Temp";
-        String username = "u49069_D3puGWDfTH";
-        String password = "MWmQ41g7wcWcZJTyPaDaKeFb";
+        String host = "nexus.ev1dent.dev";
+        String database = "s16_currency";
+        String username = "u16_4Y9mxKR4JS";
+        String password = "mAkOf@t9yroOMUT^^QLvU9WF";
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://" + host + "/" + database + "?useSSL=false";
