@@ -52,6 +52,10 @@ public final class KPMain extends JavaPlugin implements Listener {
 
     public static final String GENERAL_RANK = "kpmain.general";
 
+    public static final String MARSHAL_RANK = "kpmain.marshal";
+
+    public static final String CHAMPION_RANK = "kpmain.champion";
+
     private long breakDelay = 5L;
 
     private long decayDelay = 2L;

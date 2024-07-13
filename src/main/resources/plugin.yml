@@ -33,3 +33,7 @@ permissions:
     default: false
   kpmain.general:
     default: false
+  kpmain.marshal:
+    default: false
+  kpmain.champion:
+    default: false
