@@ -8,10 +8,10 @@ public class MySQLConnection {
     private Connection connection;
 
     public MySQLConnection() {
-        String host = "nexus.ev1dent.dev";
-        String database = "s16_currency";
-        String username = "u16_4Y9mxKR4JS";
-        String password = "mAkOf@t9yroOMUT^^QLvU9WF";
+        String host = "";
+        String database = "";
+        String username = "";
+        String password = "";
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://" + host + "/" + database + "?useSSL=false";
